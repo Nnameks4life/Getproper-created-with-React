@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-md bg-dark navbar-dark">
       <Link to className="navbar-brand" href="#">
-        <h2 className="color-green">Proper</h2>
+        <h2 className="color-green">proper</h2>
       </Link>
 
       <button
