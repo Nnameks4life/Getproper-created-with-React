@@ -1,3 +1,9 @@
 .navcolor {
-  color: rgb(236, 19, 19);
+  color: rgb(15, 155, 50) !important;
+}
+.navbg {
+  background-color: rgb(127, 196, 173) !important;
+}
+.txtalign {
+  text-align: center;
 }
