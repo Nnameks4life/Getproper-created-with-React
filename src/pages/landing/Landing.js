@@ -3,6 +3,9 @@ import mobilephone from "../../components/images/mobilephone.JPG";
 import Capture from "../../components/images/Capture.JPG";
 import Card from "../../components/card/Card";
 import Button from "../../components/button/Button";
+import thanks from "../../components/images/thanks.JPG";
+import passion from "../../components/images/passion.JPG";
+import sharing from "../../components/images/sharing.JPG";
 
 const Landing = () => {
   return (
@@ -17,7 +20,7 @@ const Landing = () => {
             >
               <h2>Share Your Plants</h2>
             </div>
-            <div className="col-9 mx-auto" style={{ color: "red" }}>
+            <div className="col-9 mx-auto" style={{ color: "#eb7d5a" }}>
               <h2>Propagate Your Passion</h2>
             </div>
             <div className="col-8 mx-auto">
@@ -33,6 +36,57 @@ const Landing = () => {
         </div>
         <div className="row">
           <div className="justify-content-md-end justify-content-start bg-dark"></div>
+        </div>
+        <div className="row">
+          <div className="col-6">
+            <img src={thanks} alt="thanks" />
+          </div>
+          <div className="col-6 py-5">
+            <h1 style={{ color: "#eb7d5a" }}>Grow your passion</h1>
+            <p>
+              We are a community of crazy plant people who love sharing
+              houseplant cuttings. Propa makes it easy to find the exact species
+              and variation you are looking for. Simply add whatever plant you
+              want to your wishlist and you'll receive a notification when
+              someone has cuttings available to share!
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-6 py-5">
+            <h1
+              style={{ color: "#eb7d5a", alignItems: "center" }}
+              className="mx-auto"
+            >
+              Show your passion
+            </h1>
+            <p>
+              Propa is the perfect place to show off your plant collection and
+              browse friends' collections for ideas. Each time you update your
+              plant's photo, we add it to a timelapse so you can watch it grow
+              all over again!
+            </p>
+          </div>
+          <div className="col-6">
+            <img src={passion} alt="thanks" />
+          </div>
+        </div>
+        <div className="mx-auto">
+          <Button />
+        </div>
+        <div className="row">
+          <div className="col-6 py-5">
+            <h1 style={{ color: "#eb7d5a" }}>Never Stop Sharing</h1>
+            <p>
+              Each time you share a cutting through Propa, you get a "prop" -
+              our version of a like - so you can see how much happiness you've
+              shared into the world. We also give you updates on your plants'
+              babies so you can watch them as they grow!
+            </p>
+          </div>
+          <div className="col-6">
+            <img src={sharing} alt="thanks" />
+          </div>
         </div>
         <div className="row py-5">
           <div className="col-4">

@@ -21,22 +21,22 @@ const NavBar = () => {
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav">
           <li className="nav-item mx-5">
-            <Link to className="nav-link navcolor" href="#">
+            <Link to="/contact" className="nav-link navcolor" href="#">
               Contact
             </Link>
           </li>
           <li className="nav-item mx-5">
-            <Link to className="nav-link navcolor" href="#">
+            <Link to="/jobs" className="nav-link navcolor" href="#">
               Jobs
             </Link>
           </li>
           <li className="nav-item mx-5">
-            <Link to className="nav-link navcolor" href="#">
+            <Link to="/blog" className="nav-link navcolor" href="#">
               Blog
             </Link>
           </li>
           <li className="nav-item mx-5">
-            <Link to className="nav-link navcolor" href="#">
+            <Link to="/discover" className="nav-link navcolor" href="#">
               Discover
             </Link>
           </li>

@@ -11,7 +11,7 @@ const Contact = () => {
         at business@getpropa.com. ​ All other inquiries may be directed to
         chat@getpropa.com. We'd love to hear from you.
       </p>
-      <Link to="/Contact">Home Page from Frankdinero</Link>
+      <Link to="/contact">Home Page from Frankdinero</Link>
     </div>
   );
 };
