@@ -11,38 +11,36 @@ const Landing = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-8">
+        <div className="col-6-md-col-6-sm-col-6">
           <img src={Capture} alt="proper" />
-          <div className="row">
-            <div
-              className="col-8 mx-auto"
-              style={{ paddingTop: "50px", color: "green" }}
-            >
-              <h2>Share Your Plants</h2>
-            </div>
-            <div className="col-9 mx-auto" style={{ color: "#eb7d5a" }}>
-              <h2>Propagate Your Passion</h2>
-            </div>
-            <div className="col-8 mx-auto">
-              <p>
-                Join our community of crazy plant people to find, share, and
-                care for your beloved houseplants.
-              </p>
-            </div>
+          <div className="col-8 mx-auto">
+            <h2 style={{ color: "green" }}>Share Your Plants</h2>
+          </div>
+          <h2 className="col-9 mx-auto" style={{ color: "#eb7d5a" }}>
+            Propagate Your Passion
+          </h2>
+          <div className="row"></div>
+          <div className="col-6 mx-5">
+            <p>
+              Join our community of crazy plant people to find, share, and care
+              for your beloved houseplants.
+            </p>
           </div>
         </div>
-        <div className="col-4 ">
-          <img src={mobilephone} width="300px" alt="phone" />
+        <div className="col-6-md-col-6-sm-col-6 mx-auto py-5">
+          <img src={mobilephone} alt="phone" />
         </div>
+        {/* <div className="row">
+          <div className="justify-content-md-end justify-content-start bg-dark"></div> */}
+        {/* </div> */}
         <div className="row">
-          <div className="justify-content-md-end justify-content-start bg-dark"></div>
-        </div>
-        <div className="row">
-          <div className="col-6">
+          <div className="col-6 mx-auto">
             <img src={thanks} alt="thanks" />
           </div>
-          <div className="col-6 py-5">
-            <h1 style={{ color: "#eb7d5a" }}>Grow your passion</h1>
+          <div className="col-5 py-5 mx-auto">
+            <div className="col-8 mx-auto">
+              <h1 style={{ color: "#eb7d5a" }}>Grow your passion</h1>
+            </div>
             <p>
               We are a community of crazy plant people who love sharing
               houseplant cuttings. Propa makes it easy to find the exact species
@@ -89,9 +87,9 @@ const Landing = () => {
           </div>
         </div>
         <div className="row py-5">
-          <div className="col-4">
-            <Card>
-              <p>
+          <div className="col-4 bradius">
+            <Card className="bradius">
+              <p className="bradius">
                 We can let loose and talk about plants all the time, which is
                 something I can't do in real life to all my non-planty friends.
                 And every time I give or receive something on here it feels kind
