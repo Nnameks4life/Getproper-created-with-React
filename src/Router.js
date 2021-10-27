@@ -8,19 +8,24 @@ import Blog from "./pages/blog/Blog";
 import Jobs from "./pages/jobs/Jobs";
 import "./index.css";
 
-function App() {
+function Router() {
+  const ROUTE = [
+    { path: "/", component: Landing },
+    { path: "/about", component: AboutUs },
+    { path: "/contact", component: Contact },
+    { path: "/blog", component: Blog },
+    { path: "/jobs", component: Jobs },
+  ];
   return (
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/about" component={AboutUs} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/blog" component={Blog} />
-        <Route exact path="/jobs" component={Jobs} />
+        {ROUTE.map((item, i) => (
+          <Route key={i} exact path={item.path} component={item.component} />
+        ))}
       </Switch>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default Router;

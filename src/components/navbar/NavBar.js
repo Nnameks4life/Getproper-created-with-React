@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MENUS } from "../../Utils/heading";
 import Button from "../button/Button";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-md bg-dark navbg navbar-dark">
-      <Link to className="navbar-brand" href="#">
+      <Link to className="navbar-brand">
         <h2 className="color-green text-bold navcolor">Proper</h2>
       </Link>
 
@@ -20,26 +21,13 @@ const NavBar = () => {
 
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav">
-          <li className="nav-item mx-5">
-            <Link to="/contact" className="nav-link navcolor" href="#">
-              Contact
-            </Link>
-          </li>
-          <li className="nav-item mx-5">
-            <Link to="/jobs" className="nav-link navcolor" href="#">
-              Jobs
-            </Link>
-          </li>
-          <li className="nav-item mx-5">
-            <Link to="/blog" className="nav-link navcolor" href="#">
-              Blog
-            </Link>
-          </li>
-          <li className="nav-item mx-5">
-            <Link to="/discover" className="nav-link navcolor" href="#">
-              Discover
-            </Link>
-          </li>
+          {MENUS.map((menu, index) => (
+            <li key={index} className="nav-item mx-5">
+              <Link to={menu.url} className="nav-link navcolor">
+                {menu.title}
+              </Link>
+            </li>
+          ))}
         </ul>
         <ul
           className="hidden nav justify-content-md-end justify-content-start"

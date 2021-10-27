@@ -8,6 +8,47 @@ import passion from "../../components/images/passion.JPG";
 import sharing from "../../components/images/sharing.JPG";
 
 const Landing = () => {
+  const LANDS = [
+    {
+      description: `We are a community of crazy plant people who love sharing
+              houseplant cuttings. Propa makes it easy to find the exact species
+              and variation you are looking for. Simply add whatever plant you
+              want to your wishlist and you'll receive a notification when
+              someone has cuttings available to share!`,
+      claz: "col-4 bradius py-auto",
+    },
+    {
+      description: `This app is cool because I can check with the people in the same
+                area where I live. The interaction through the app is easier
+                because they will know that I will only ask about plants.`,
+      claz: "col-4",
+    },
+    {
+      description: `I love it! I see a ton more plants on the map just this week.
+                Glad more people are trying it out. I found out about it in a
+                plant exchange FB group and a bunch of people loved it too`,
+      claz: "col-4",
+    },
+    {
+      description: `This is such a brilliant idea. Super excited to see it take off.
+                I'm really loving what you've created. I'm pacing myself and
+                only adding a few plants every day 😂`,
+      claz: "col-4",
+    },
+    {
+      description: `Really like the idea behind it, I do some trading and sending of
+                plants through the mail via fb groups but it's nice to have
+                designated place and searchable if you are looking for a
+                specific plant.`,
+      claz: "col-4",
+    },
+    {
+      description: `One of the FB groups I belong to posted the link. Just the kind
+                of app I love to be a part of`,
+      claz: "col-4",
+    },
+  ];
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -30,9 +71,6 @@ const Landing = () => {
         <div className="col-6-md-col-6-sm-col-6 mx-auto py-5">
           <img src={mobilephone} alt="phone" />
         </div>
-        {/* <div className="row">
-          <div className="justify-content-md-end justify-content-start bg-dark"></div> */}
-        {/* </div> */}
         <div className="row">
           <div className="col-6 mx-auto">
             <img src={thanks} alt="thanks" />
@@ -87,63 +125,13 @@ const Landing = () => {
           </div>
         </div>
         <div className="row py-5">
-          <div className="col-4 bradius">
-            <Card className="bradius">
-              <p className="bradius">
-                We can let loose and talk about plants all the time, which is
-                something I can't do in real life to all my non-planty friends.
-                And every time I give or receive something on here it feels kind
-                of like Christmas to me
-              </p>
-            </Card>
-          </div>
-          <div className="col-4">
-            <Card>
-              <p>
-                This app is cool because I can check with the people in the same
-                area where I live. The interaction through the app is easier
-                because they will know that I will only ask about plants.
-              </p>
-            </Card>
-          </div>
-          <div className="col-4">
-            <Card>
-              <p>
-                I love it! I see a ton more plants on the map just this week.
-                Glad more people are trying it out. I found out about it in a
-                plant exchange FB group and a bunch of people loved it too
-              </p>
-            </Card>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-4">
-            <Card>
-              <p>
-                This is such a brilliant idea. Super excited to see it take off.
-                I'm really loving what you've created. I'm pacing myself and
-                only adding a few plants every day 😂
-              </p>
-            </Card>
-          </div>
-          <div className="col-4">
-            <Card>
-              <p>
-                Really like the idea behind it, I do some trading and sending of
-                plants through the mail via fb groups but it's nice to have
-                designated place and searchable if you are looking for a
-                specific plant.
-              </p>
-            </Card>
-          </div>
-          <div className="col-4">
-            <Card>
-              <p>
-                One of the FB groups I belong to posted the link. Just the kind
-                of app I love to be a part of
-              </p>
-            </Card>
-          </div>
+          {LANDS.map((land, index) => (
+            <div key={index} className={land.claz}>
+              <Card className="bradius">
+                <p>{land.description}</p>
+              </Card>
+            </div>
+          ))}
         </div>
         <div className="btn mx-auto">
           {" "}

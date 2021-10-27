@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/button/Button";
+import { MY_TEAM, MY_CONTACTS2 } from "../../Utils/constants";
 
 const Jobs = () => {
   return (
@@ -14,14 +15,7 @@ const Jobs = () => {
       <div className="col-5 mx-auto py-5">
         <div class="row">
           <p className="text-center mx-50">
-            We're building a team of talented people who are crazy about
-            houseplants. We'd love for you to join us. ​ Propa is dedicated to
-            creating an amazing work environment, driven by kind, creative minds
-            with diverse perspectives. Our team's passion will be evident in our
-            products. ​ Propa is headquartered in the lovely town of Annapolis,
-            Maryland. Employees are expected to eventually relocate and work
-            in-office. ​ To apply, send your resume to{" "}
-            <Link to="/jobs">jobs@getpropa.com.</Link>
+            {MY_TEAM} {MY_CONTACTS2}
           </p>
         </div>
         <h1 style={{ color: "green" }} className="text-center py-5">

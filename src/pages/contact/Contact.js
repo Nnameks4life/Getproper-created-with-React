@@ -1,6 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import {
+  MY_CONTACTS,
+  MY_CONTACTS3,
+  MY_CONTACTS4,
+  MY_CONTACTS5,
+  MY_CONTACTS6,
+} from "../../Utils/constants";
 const Contact = () => {
   return (
     <div className="container-fluid">
@@ -8,11 +13,9 @@ const Contact = () => {
         <div className="col-5 mx-auto py-5">
           <h1 style={{ color: "green" }}>Contact</h1>
           <p>
-            Get the latest news about Propa by signing up for our mailing list!
-            If you're a retailer interested in partnering with Propa, please
-            contact us at <Link to="/">business@getpropa.com.</Link> All other
-            inquiries may be directed to <Link to="/">chat@getpropa.com.</Link>{" "}
-            We'd love to hear from you.
+            {MY_CONTACTS} {MY_CONTACTS3} {MY_CONTACTS4}
+            {MY_CONTACTS5}
+            {MY_CONTACTS6}
           </p>
         </div>
       </div>
