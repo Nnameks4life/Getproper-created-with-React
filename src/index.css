@@ -8,5 +8,18 @@
   text-align: center;
 }
 .bradius {
-  border-radius: 15px;
+  border-radius: 5px;
+  border-color: greenyellow;
+}
+
+.sharestyle {
+  color: green;
+}
+
+.passionstyle {
+  color: #eb7d5a;
+}
+.passionp {
+  align-items: center;
+  margin-top: 5px;
 }
