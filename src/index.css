@@ -1,3 +1,33 @@
 .navcolor {
-  color: rgb(236, 19, 19);
+  color: rgb(15, 155, 50);
+}
+.navbg {
+  background-color: rgb(127, 196, 173);
+}
+.txtalign {
+  text-align: center;
+}
+.hidden {
+  width: 100%;
+}
+.bradius {
+  border-radius: 5px;
+  border-color: greenyellow;
+}
+
+.sharestyle {
+  color: green;
+}
+
+.passionstyle {
+  color: #eb7d5a;
+}
+.passionp {
+  align-items: center;
+  margin-top: 5px;
+}
+
+.cardborder {
+  border-radius: 15px;
+  border: 2px solid black;
 }
