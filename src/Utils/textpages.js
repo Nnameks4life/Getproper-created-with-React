@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const MY_TEAM = `We're building a team of talented people who are crazy about
             houseplants. We'd love for you to join us. ​ Propa is dedicated to
             creating an amazing work environment, driven by kind, creative minds

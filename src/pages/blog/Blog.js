@@ -5,7 +5,7 @@ const Blog = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-6 d-flex justify-content-between">
-          <p>All Posts</p>{" "}
+          <p>All Posts</p>
         </div>
         <input text="Login/Sign up"></input>
       </div>

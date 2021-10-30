@@ -5,7 +5,7 @@ import Button from "../button/Button";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md bg-dark navbg navbar-dark">
+    <nav className="navbar navbar-expand-md navbg">
       <Link to className="navbar-brand">
         <h2 className="color-green text-bold navcolor">Proper</h2>
       </Link>
@@ -29,10 +29,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        <ul
-          className="hidden nav justify-content-md-end justify-content-start"
-          style={{ width: "100%" }}
-        >
+        <ul className="hidden nav justify-content-md-end justify-content-start">
           <li className="nav-item mx-5">
             <Button />
           </li>

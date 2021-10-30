@@ -1,11 +1,14 @@
 .navcolor {
-  color: rgb(15, 155, 50) !important;
+  color: rgb(15, 155, 50);
 }
 .navbg {
-  background-color: rgb(127, 196, 173) !important;
+  background-color: rgb(127, 196, 173);
 }
 .txtalign {
   text-align: center;
+}
+.hidden {
+  width: 100%;
 }
 .bradius {
   border-radius: 5px;
@@ -22,4 +25,9 @@
 .passionp {
   align-items: center;
   margin-top: 5px;
+}
+
+.cardborder {
+  border-radius: 15px;
+  border: 2px solid black;
 }
